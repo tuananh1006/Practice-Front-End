@@ -1,0 +1,80 @@
+body {
+  font: 16px/20px Arial, Helvetica, sans-serif;
+  background: url("../images/co-vietnam.png") center no-repeat fixed;
+}
+
+#title-page {
+  text-align: center;
+  color: red;
+  text-shadow: 2px 1px 2px yellow;
+}
+
+.anhtrai {
+  float: left;
+  margin-right: 15px;
+}
+
+.anhphai {
+  float: right;
+  margin-left: 15px;
+}
+
+#image-resize {
+  width: 350px;
+  height: auto;
+}
+
+#footer {
+  text-align: right;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+h3 {
+  color: white;
+  font-size: x-large;
+  padding: 10px;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-purple {
+  background-color: purple;
+}
+
+.bg-magenta {
+  background-color: magenta;
+}
+
+#dropcap {
+  float: left;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-shadow: 2px 2px 0 red;
+  color: yellow;
+}
+
+p {
+  text-align: justify;
+}
+
+.three-column {
+  column-count: 3;
+  column-rule: dashed;
+  column-rule-color: black;
+  column-gap: 30px;
+}
+
+.three-column p {
+  margin: 0px 15px;
+}
+
+.three-column img {
+  width: 100%;
+  height: auto;
+}
