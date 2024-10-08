@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .form-dangnhap {
+        border: 3px dotted brown;
+        border-radius: 20px;
+        width: 70%;
+        padding-bottom: 50px;
+        margin: 0 auto;
+        margin-top: 20%;
+        background: url("./hinh/login.jpg") 80% 37% no-repeat fixed;
+      }
+      .form-dangnhap h1 {
+        padding-top: 2%;
+        text-align: center;
+        color: brown;
+        padding-bottom: 2%;
+      }
+      .fill-form {
+        width: 290px;
+        margin: 0 auto;
+      }
+      .form-dangnhap input {
+        background-color: rgba(233, 125, 125, 0.2);
+        border-radius: 20px;
+        border-style: dotted;
+        border-color: red;
+        padding-top: 4px;
+      }
+      .form-dangnhap button {
+        background-color: red;
+        color: white;
+        border-radius: 20px;
+        padding: 3px 9px;
+        border-color: rgba(201, 201, 201, 0.2);
+        box-shadow: 2px 2px 2px gray;
+      }
+      .form-dangnhap button:hover {
+        background-color: rgb(252, 87, 87);
+        cursor: pointer; /* Thay đổi con trỏ thành kiểu click */
+      }
+      .form-dangnhap hello-output {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-dangnhap">
+      <h1>Form đăng nhập</h1>
+      <div>
+        <div class="fill-form">
+          <p style="text-align: right">
+            Tên người dùng <input type="text" style="" />
+          </p>
+        </div>
+        <div class="fill-form">
+          <p style="text-align: right">
+            Mật khẩu
+            <input type="text" />
+          </p>
+        </div>
+        <div>
+          <button style="margin-left: 45%" onclick="myFunction()">
+            Đăng nhập
+          </button>
+        </div>
+        <p style="text-align: center; padding-bottom: 40px">
+          <span class="hello-output"
+            >Chào bạn <i><b>Tuấn Ank</b></i></span
+          >
+        </p>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        const helloOutput = document.getElementsByClassName("hello-output")[0];
+        if (helloOutput.style.color === "white") {
+          helloOutput.style.color = "brown"; // Sửa thuộc tính display
+          alert("Đăng nhập thành công!"); // Thay đổi thông báo alert nếu cần
+        } else {
+          helloOutput.style.color = "white"; // Ẩn phần tử
+        }
+      }
+    </script>
+  </body>
+</html>

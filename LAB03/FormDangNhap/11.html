@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Dang nhap</title>
+    <style>
+      .signin-form {
+        margin: 0 auto;
+        width: 300px;
+      }
+      .signin-form h1 {
+        text-align: center;
+        color: brown;
+      }
+      .fill-form {
+        width: 290px;
+      }
+
+      .hello-output {
+        color: red;
+        margin-left: 30%;
+        display: None;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signin-form">
+      <h1>Form đăng nhập</h1>
+      <div>
+        <div class="fill-form">
+          <p>Tên người dùng <input type="text" style="float: right" /></p>
+        </div>
+        <div class="fill-form">
+          <p>Mật khẩu <input type="text" style="float: right" /></p>
+        </div>
+        <div>
+          <button style="margin-left: 40%" onclick="myFunction()">
+            Đăng nhập
+          </button>
+        </div>
+        <p class="hello-output">
+          Chào bạn <i><b>Tuấn Ank</b></i>
+        </p>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        const helloOutput = document.getElementsByClassName("hello-output")[0];
+        if (
+          helloOutput.style.display === "none" ||
+          helloOutput.style.display === ""
+        ) {
+          helloOutput.style.display = "block"; // Sửa thuộc tính display
+          alert("Đăng nhập thành công!"); // Thay đổi thông báo alert nếu cần
+        } else {
+          helloOutput.style.display = "none"; // Ẩn phần tử
+        }
+      }
+    </script>
+  </body>
+</html>
