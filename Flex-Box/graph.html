@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes growth {
+        from {
+          height: calc(var(--percent) * 0.5%);
+          opacity: 0;
+        }
+        to {
+          height: calc(var(--percent) * 1%);
+          opacity: 1;
+        }
+      }
+      .container {
+        display: flex;
+        height: 320px;
+        padding: 32px 0;
+        margin: 36px auto 0 auto;
+        background-color: antiquewhite;
+        justify-content: space-around;
+        align-items: flex-end;
+      }
+      .col {
+        height: calc(var(--percent) * 1%);
+        background-color: orange;
+        width: 60px;
+        color: white;
+        text-align: center;
+        animation: growth 1.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col" style="--percent: 50">50%</div>
+      <div class="col" style="--percent: 70">70%</div>
+      <div class="col" style="--percent: 80">80%</div>
+    </div>
+  </body>
+</html>

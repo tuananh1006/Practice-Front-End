@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        display: flex;
+        background-color: orange;
+        justify-content: space-between;
+        height: 50px;
+        align-items: center;
+      }
+      .nav-list {
+        margin-left: 20px;
+      }
+      .nav-list li {
+        display: inline-block;
+        margin: 0 10px;
+        list-style: none;
+        cursor: pointer;
+      }
+      .nav-list li:hover {
+        color: white;
+      }
+      .login-form {
+        max-width: 100%;
+        padding: 32px;
+        background-color: bisque;
+        flex-direction: column;
+        display: flex;
+      }
+      .fill-content {
+        display: inline-flex;
+        padding: 8px 0;
+      }
+      .form-label {
+        min-width: 90px;
+      }
+      .form-input {
+      }
+      .content {
+        display: flex;
+        padding-top: 50px;
+        justify-content: space-evenly;
+      }
+      .col {
+        padding: 0 16px;
+        flex: 1;
+      }
+      .col-2 {
+        flex: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul class="nav-list">
+        <li>Hồ sơ</li>
+        <li>Khuyến nghị</li>
+        <li>Lộ trình</li>
+      </ul>
+      <ul class="nav-list">
+        <li>Đăng nhập</li>
+        <li>Đăng ký</li>
+      </ul>
+    </div>
+    <div class="login-form">
+      <div class="fill-content">
+        <label for="" class="form-label">Name:</label>
+        <input type="text" class="form-input" />
+      </div>
+      <div class="fill-content">
+        <label for="" class="form-label">Name:</label>
+        <input type="text" class="form-input" />
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="col">
+        <h1>Sidebar1</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare,
+          neque at laoreet viverra, ipsum nunc laoreet lectus, vel convallis
+          orci turpis sit amet odio. Sed non sapien sodales, facilisis ipsum
+          pellentesque, consequat neque. Mauris pretium euismod accumsan.
+          Quisque dignissim aliquet sapien quis vehicula. Nam mollis tellus id
+          efficitur consectetur. Curabitur pellentesque turpis quis dui placerat
+          congue. Curabitur dui orci, congue non finibus in, hendrerit nec
+          mauris.
+        </p>
+      </div>
+      <div class="col col-2">
+        <h1>Sidebar2</h1>
+      </div>
+      <div class="col">
+        <h1>Sidebar3</h1>
+      </div>
+    </div>
+  </body>
+</html>
