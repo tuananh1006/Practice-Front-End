@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        PC: >=1024PX
+        Tablet: >=740px  < 1024px;
+        Mobile 740px
+    */
+      .pc,
+      .tablet,
+      .mobile {
+        display: None;
+        font-size: 50px;
+        text-align: center;
+      }
+      .content {
+        width: 800px;
+        max-width: 100%;
+        padding-left: 8px;
+        padding-right: 100px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .button {
+        margin: 0 50%;
+      }
+      @media (min-width: 1024px) {
+        .pc {
+          display: block;
+        }
+      }
+
+      @media (min-width: 740px) and (max-width: 1023px) {
+        .tablet {
+          display: block;
+        }
+      }
+
+      @media (max-width: 739px) {
+        .mobile {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pc">PC</div>
+    <div class="tablet">Tablet</div>
+    <div class="mobile">Mobile</div>
+    <div class="content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare,
+        neque at laoreet viverra, ipsum nunc laoreet lectus, vel convallis orci
+        turpis sit amet odio. Sed non sapien sodales, facilisis ipsum
+        pellentesque, consequat neque. Mauris pretium euismod accumsan. Quisque
+        dignissim aliquet sapien quis vehicula. Nam mollis tellus id efficitur
+        consectetur. Curabitur pellentesque turpis quis dui placerat congue.
+        Curabitur dui orci, congue non finibus in, hendrerit nec mauris.
+      </p>
+      <p>
+        Curabitur dapibus orci ut ullamcorper mattis. Quisque hendrerit velit
+        ante, eu aliquam urna placerat vitae. Etiam interdum condimentum tempus.
+        Phasellus ullamcorper nec dui sit amet mattis. Nullam commodo mi in est
+        vulputate, ut mollis sapien rhoncus. Pellentesque semper at felis non
+        euismod. Aenean sed ullamcorper quam. Nunc sagittis facilisis tempus.
+        Maecenas aliquam sed ex vel gravida. Mauris sit amet enim in ligula
+        laoreet posuere. Phasellus pharetra suscipit felis et malesuada.
+      </p>
+      <p>
+        Aliquam vitae volutpat purus. Sed posuere tortor vitae erat vehicula
+        pulvinar. In vitae mattis lectus, eu porttitor turpis. Pellentesque in
+        venenatis nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nunc vitae lacus nibh. Curabitur aliquam, eros nec finibus sagittis, est
+        enim tempor velit, eu laoreet felis elit ac risus. Morbi volutpat
+        egestas lacus in ullamcorper. Nulla a neque in massa placerat aliquet.
+        Nunc dolor massa, luctus vitae enim iaculis, consectetur ullamcorper
+        mauris. Nulla nec nibh eu elit rhoncus viverra. Integer vehicula tortor
+        ac erat iaculis, sit amet tempor est molestie. Praesent et ligula ut
+        orci faucibus eleifend ac vel quam. Phasellus eu tellus vel tellus
+        ultricies consectetur. Phasellus arcu elit, aliquet a urna ut, tristique
+        cursus eros. Suspendisse ultrices diam sed condimentum tincidunt.
+      </p>
+    </div>
+
+    <input type="submit" class="button" />
+    <script>
+      var button = document.querySelector(".button");
+      button.onclick = function () {
+        alert("hi");
+      };
+    </script>
+  </body>
+</html>
